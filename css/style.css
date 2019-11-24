@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    }
+
+.header.altura_header {
+    background-color:  #55A097;
+    height: 80px;
+}
+
+.header-menu {
+padding: 30px;
+}
+.header-menu a{
+    font-family: Verdana;
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+
+}
+
+.logo img {
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.form_search_button { 
+width: 30px;
+padding: 0;
+height: 30px;
+margin-top: 10px;
+vertical-align: bottom;
+}
+
+.form_search_button img {
+    height: 100%;
+}
+
+  .form_wrapper {
+    margin-top: 10px;
+  }
+ 
+  .form_search {
+    width: 70%;
+  }
+ 
+  .form_search::placeholder {
+    font-weight: 400;
+  }
+  
+ 
+#rodape {
+    background-color:#55A097;
+    height: 80px; 
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+
+}
+
+#copyright {
+    font-family: Verdana;
+    margin-top: 30px;
+}
+
+svg {
+    margin-top: 20px;
+}
+
+.container {
+    height: 100%;
+}
