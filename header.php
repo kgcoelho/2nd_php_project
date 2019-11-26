@@ -8,21 +8,26 @@
                 <img src="img/logo_atacado_natal.png" alt="Logo Atacado Natal">
             </a>
         </div>
-        <nav class="header-menu grid-10">
+        
 
-            <a href="?p=home">Home</a>
-            <a href="?p=sobre">Sobre</a>
+        <?php
+            include("pesquisa_form.php");
+        // include("verificalogin.php");
+
+        ?>
+        <nav class="header-menu grid-4">
             <?php
-            // if (@$_SESSION['usuario']) {
+             if (@$_SESSION['email']) {
                 
                 ?>
-                <a href="">Criar Conta</a>
+                <a href="?p=home">Sair</a>
              <?php 
-            //  } else { 
+            } else { 
                 ?>
-                <a href="">Log In</a>
+                <a href="?p=criar_conta">Login ou Cadastre-se</a>
+                
             <?php 
-            // }
+            }
             ?>
 
 
@@ -30,10 +35,6 @@
 
             </ul>
         </nav>
-        <?php
-            include("pesquisa_form.php");
-        // include("verificalogin.php");
-
-        ?>
+        
     </div>
 </header>

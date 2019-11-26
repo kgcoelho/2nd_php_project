@@ -59,9 +59,9 @@ CREATE TABLE `clientes` (
 -- Fazendo dump de dados para tabela `clientes`
 --
 
-INSERT INTO `clientes` (`clicodig`, `clinome`, `cliemail`, `clisenha`) VALUES
-(1, 'João', '', ''),
-(2, 'Maria', '', '');
+INSERT INTO `clientes` (`clicodig`, `clinome`, `clisobrenome`, `cliemail`, `clitelefone`, `clisenha`) VALUES
+(1, 'João', '', '', '',''),
+(2, 'Maria', '', '', '', '');
 
 -- --------------------------------------------------------
 

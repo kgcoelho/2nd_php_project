@@ -22,5 +22,3 @@ catch(PDOException $ex){
     //em caso de erro mostra a mensagem
     echo("Deu erro! <br>". $ex->getMessage());
 }
-
-?>

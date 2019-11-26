@@ -29,29 +29,29 @@ include ("header.php");
 $pag="home";
 $vetValidas = array ("sobre", "form_contato/form","pesquisa","alteracao_form","incluir_form","mensagem_adm/exibe_mensa");
 
-if(isset($_GET['n'])){
+// if(isset($_GET['n'])){
    
-   $pag = 'form_contato/form';
-}
-if(isset($_GET['m'])){
+//    $pag = 'form_contato/form';
+// }
+// if(isset($_GET['m'])){
    
-    $pag = 'alteracao_form';
- }
- if(isset($_GET['b'])){
+//     $pag = 'alteracao_form';
+//  }
+  if(isset($_GET['b'])){
    
     $pag = 'home';
  }
- if(isset($_GET['r'])){
+  if(isset($_GET['r'])){
    
    $pag = 'mensagem_adm/exibe_mensa';
-}
+ }
 
 
-if(isset($_REQUEST['p']))
+ if(isset($_REQUEST['p']))
 {
-$pag= $_REQUEST['p'];
+   $pag= $_REQUEST['p'];
 }
-include ($pag .".php");
+   include ($pag .".php");
 
 
 ?>

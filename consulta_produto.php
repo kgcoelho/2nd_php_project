@@ -22,5 +22,3 @@ try {
 catch(PDOException $ex){
 	echo($ex->getMessage());
 }
-
-?>
